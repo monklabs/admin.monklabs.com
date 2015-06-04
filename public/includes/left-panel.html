@@ -1,0 +1,41 @@
+<!-- User info -->
+<div class="login-info">
+    <span> <!-- User image size is adjusted inside CSS, it should stay as is --> 
+					
+					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+						<img src="img/avatars/sunny.png" alt="me" class="online" /> 
+						<span data-localize="john.doe">
+							john.doe 
+						</span>
+    <i class="fa fa-angle-down"></i>
+    </a>
+    </span>
+</div>
+<!-- end user info -->
+<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+<navigation>
+    <nav:item data-view="/dashboard" data-icon="fa fa-lg fa-fw fa-home" title="Dashboard" />
+    <nav:group data-icon="fa fa-lg fa-fw fa-code" title="Experiment">
+        <nav:item data-view="/exp/studio" title="Studio" />
+    </nav:group>
+    <nav:group data-icon="fa fa-lg fa-fw fa-code" title="Data Source">
+        <nav:item data-view="/data/file" title="File" />
+        <nav:item data-view="/data/service" title="Service" />
+        <nav:item data-view="/data/database" title="Database" />
+        <nav:item data-view="/data/market" title="Data Market" />
+    </nav:group>
+    <nav:group data-icon="fa fa-lg fa-fw fa-code" title="Modules">
+        <nav:item data-view="/models/versions" title="Versions" />
+        <nav:item data-view="/models/market" title="Market" />
+    </nav:group>
+    <nav:group data-icon="fa fa-lg fa-fw fa-form" title="Models">
+        <nav:item data-view="/models/versions" title="Versions" />
+        <nav:item data-view="/models/market" title="Market" />
+    </nav:group>
+</navigation>
+<span class="minifyme" data-action="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i> </span>
